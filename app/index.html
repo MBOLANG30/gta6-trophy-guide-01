@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — All 55 PS5 Trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="kicker">Leonida &middot; PlayStation 5 &middot; Unofficial fan guide</p>
+  <h1>GTA VI Trophy Guide &amp; Tracker</h1>
+  <p class="lede">Every one of the 55 trophies — official names, descriptions and grades — with a guide in our own words, a roadmap to the Platinum, and a checklist that saves your progress in this browser. Works fully offline.</p>
+  <div class="progress-wrap" aria-label="Trophy progress">
+    <div class="progress-numbers"><span id="earned-count">0 of 55 earned</span><span id="earned-pct">0%</span></div>
+    <div class="progress-bar"><div id="earned-fill" class="progress-fill"></div></div>
+    <p class="progress-grades" id="grade-counts"></p>
+  </div>
+</header>
+
+<section class="warnings" id="warnings" aria-label="Before you start"></section>
+
+<section class="controls" aria-label="Tracker controls">
+  <div class="controls-row">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy name, mission, place…" autocomplete="off"></label>
+    <label>Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label>Progress
+      <select id="earned-filter">
+        <option value="all">All trophies</option>
+        <option value="earned">Earned only</option>
+        <option value="unearned">Not earned yet</option>
+      </select>
+    </label>
+    <label class="spoiler-toggle"><input id="spoilers" type="checkbox"> Hide story spoilers</label>
+  </div>
+  <div class="controls-row kinds" id="kind-filters" role="group" aria-label="Filter by kind"></div>
+  <div class="controls-row actions">
+    <button id="expand-all" type="button">Expand all guides</button>
+    <button id="collapse-all" type="button">Collapse all</button>
+    <button id="export" type="button">Export progress</button>
+    <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset progress</button>
+    <span id="status" class="status" role="status"></span>
+  </div>
+  <p class="filter-note" id="filter-note"></p>
+</section>
+
+<main>
+  <div id="list" class="trophy-list"></div>
+  <p id="empty" class="empty" hidden>No trophies match these filters. Clear the search or pick another kind.</p>
+</main>
+
+<section class="roadmap" aria-label="Roadmap to the Platinum">
+  <h2>Roadmap to the Platinum <span class="roadmap-time">~200 hours &middot; difficulty 4/10 &middot; 1 playthrough</span></h2>
+  <div id="roadmap-stages" class="stages"></div>
+</section>
+
+<footer>
+  <h2>Sources &amp; honesty note</h2>
+  <p>Official trophy names, descriptions and grades are as PlayStation publishes them, taken from the list Exophase and PSNProfiles published and cross-checked by <a href="https://www.planetgta6.com/en/gta-6-trophies/">Planet GTA 6</a>. Every guide is written for this page in our own words, drawing on the methods in <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx's GTA 6 Trophy Guide &amp; Roadmap</a> (checked 19 November 2026) and the <a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer trophy guide</a>. Four trophies have no confirmed unlock method yet — their guides say so plainly instead of guessing. This is an unofficial fan guide, not affiliated with Rockstar Games, and it uses no Rockstar logo, artwork or screenshots.</p>
+  <p class="foot-note">Progress is stored only in this browser (localStorage). Export downloads a JSON file; import restores it. No account, no network, no tracking.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
